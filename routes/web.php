@@ -9,16 +9,17 @@
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-|copyright 2019@tkidega
+| copyright 2019@tkidega
+|
+| Route::get('/', function () {
+|    return view('welcome');
+| });
+|
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
 
 // Defining default routes for the public section sub-system
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('genHappiness/index');
 });
 
