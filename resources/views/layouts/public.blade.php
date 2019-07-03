@@ -27,8 +27,8 @@
       <div class='pg_header' >
         @yield('header')
         <?php
-        //Where 'header' describes the desired section in the view
-        //Add some logic here
+          //Where 'header' describes the desired section in the view
+          //Add some logic here
         ?>
         <h3 class='secTitle' >
           cukNinja Public View - Universal Header Section</h3>
