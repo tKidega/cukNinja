@@ -8344,7 +8344,7 @@ button.close {
 
 #footer h4,
 #footer h6 {
-  color: inherit;
+  color: default;
 }
 
 #footer h4 {

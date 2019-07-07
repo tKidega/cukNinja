@@ -11,17 +11,16 @@
     <meta charset='UTF-8'>
     <meta name='Description' content = <?php echo DESC; ?> >
     <meta name='Developer'   content = <?php echo E_MAIL; ?> >
-    <link rel='stylesheet' type='text/css' href='/css/app.css' />
+    <link rel='stylesheet' type='text/css' href='css/app.css' />
   </head>
   <body>
     <div class='container'>
       <div class='pg_header' >
-        @yield('header')
         <?php
           //Where 'header' describes the desired section in the view
           //Add some logic here
         ?>
-        <h3 class='secTitle' >
+        @yield('header')
         @include('scripts.header_00')
       </div>
       <div style='clear:both'></div>
