@@ -13,3 +13,9 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
+
+// This will combine several CSS stylesheets into one 
+mix.styles([
+   'public/css/custom/style_A.css',
+   'public/css/custom/style_B.css',
+], 'public/css/custom/style.css');

@@ -2,6 +2,7 @@
   define('TITLE','cukNinja Farmer');
   define('DESC', 'Under_construction');
   define('E_MAIL', 'timothykidega@gmail.com');
+  define('SYS_ONE', 'cukNinja');
 ?>
 <!DOCTYPE html>
 <html lang='en'>
@@ -10,8 +11,7 @@
     <meta charset='UTF-8'>
     <meta name='Description' content = <?php echo DESC; ?> >
     <meta name='Developer' content = <?php print E_MAIL; ?> >
-    <link rel='stylesheet' type='text/css'
-          href='../assets/css/myStyle.css'/>
+    <link rel='stylesheet' type='text/css' href='/css/app.css' />
   </head>
   <body>
     <div class='container'>
@@ -21,8 +21,7 @@
           //Add some logic here
         ?>
         @yield('header')
-        <h2>cukNinja Farmer - Universal Header Section</h2>
-        <?php //Include source code for site header here ?>
+        @include('scripts.header_02')
       </div>
       <div style='clear:both'></div>
 
@@ -32,7 +31,7 @@
           //Add some logic here
         ?>
         @yield('navigator')
-        <h2>cukNinja Farmer - Universal Navigator Section</h2>
+        @include('scripts.navbar_02')
       </div>
       <div style='clear:both'></div>
 
@@ -55,7 +54,7 @@
           //Add some logic here
         ?>
         @yield('footer')
-        <h3>cukNinja Farmer - Universal Footer Section</h3>
+        @include('scripts.footer_02')
       </div>
       <div style='clear:both'></div>
     </div>

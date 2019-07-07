@@ -2,6 +2,7 @@
   define('TITLE','cukNinja Public');
   define('DESC', 'Under_construction');
   define('E_MAIL', 'timothykidega@gmail.com');
+  define('SYS_ONE', 'cukNinja');
 ?>
 <!DOCTYPE html>
 <html lang='en'>
@@ -10,17 +11,7 @@
     <meta charset='UTF-8'>
     <meta name='Description' content = <?php echo DESC; ?> >
     <meta name='Developer'   content = <?php echo E_MAIL; ?> >
-    <link rel='stylesheet' type='text/css'
-          href='../assets/css/myStyle.css' />
-    <style>
-      .secTitle,.sec2Title{
-        color: rgba(65,65,65,0.95);
-      }.secTitle{
-        font-size: 1.3em;
-      }.sec2Title{
-        font-size: 1.15em;
-      }
-    </style>
+    <link rel='stylesheet' type='text/css' href='/css/app.css' />
   </head>
   <body>
     <div class='container'>
@@ -31,10 +22,7 @@
           //Add some logic here
         ?>
         <h3 class='secTitle' >
-          cukNinja Public View - Universal Header Section</h3>
-        <?php
-          //Include source code for site header here
-        ?>
+        @include('scripts.header_00')
       </div>
       <div style='clear:both'></div>
 
@@ -44,8 +32,7 @@
           //Add some logic here....
         ?>
         @yield('navigator')
-        <h3 class='secTitle' >
-          cukNinja Public View - Universal Navigator Section</h3>
+        @include('scripts.navbar_00')
       </div>
       <div style='clear:both'></div>
 
@@ -55,8 +42,8 @@
           //Add some logic here....
         ?>
         @yield('home_content')
-        @yield('about_content')
         @yield('search_content')
+        @yield('about_content')
         @yield('contact_content')
       </div>
       <div style='clear:both'></div>
@@ -67,8 +54,7 @@
         //Where 'footer' describes the desired section in the view
         //Add some logic here
       ?>
-        <h3 class='secTitle' >
-          Copyright&copy; <?php echo date('Y'); ?></h3>
+        @include('scripts.footer_00')
       </div>
       <div style='clear:both'></div>
     </div>

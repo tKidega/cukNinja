@@ -1,0 +1,35 @@
+.navbar{
+  border-radius: 0;
+}#footer{
+  margin: 2.5px auto;
+  width: 85%;
+}#footer h4,#footer h6{
+  color: inherit;
+}#footer h4{
+  margin: 10px auto;
+}#footer h6{
+  margin-top: -3.5px;
+}
+// Defining default section header font-settings
+// Main Headings
+.mainTitle, .main2Title, .main3Title, .main4Title{
+  text-align: center;
+  color: rgba(225,225,225,0.75);
+}.mainTitle{
+    font-size: 1.25em;
+}.main2Title{
+    margin-top: 5px;
+    font-size: 1.15em;
+}.main3Title{
+    font-size: 0.95em;
+}.main4Title{
+    fonts-ize: 0.75em;
+}
+// Section Headings
+.secTitle,.sec2Title{
+  color: rgba(65,65,65,0.95);
+}.secTitle{
+  font-size: 1.3em;
+}.sec2Title{
+  font-size: 1.5em;
+}

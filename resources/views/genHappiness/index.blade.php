@@ -17,7 +17,7 @@
 @endsection
 
 @section('home_content')
-  <h3 class='sec2Title'>Public Home Page - Custom Page Content Section</h3>
+  <h3>Public Home Page - Custom Page Content Section</h3>
   <?php
     //This section is customizable based on sub-system requirements
     $t = rand(2,8);

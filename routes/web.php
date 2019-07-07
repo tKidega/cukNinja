@@ -24,20 +24,20 @@ Route::get('/', function () {
 });
 
 Route::get('/search', function () {
-    return view('genHappiness/pub_search');
+    return view('genHappiness/search');
 });
 
 Route::get('/about', function () {
-    return view('genHappiness/pub_about');
+    return view('genHappiness/about');
 });
 
 Route::get('/contact', function () {
-    return view('genHappiness/pub_contact');
+    return view('genHappiness/contact');
 });
 
 // Defining default routes for cukNinja Finance sub-system
 
-Route::get('/financeLogin', function () {
+Route::get('/finance', function () {
     return view('finance/index');
 });
 
@@ -59,7 +59,7 @@ Route::get('/vslaSiteAdmin', function () {
 
 // Defining default routes for cukNinja Farmer sub-system
 
-Route::get('/farmerLogin', function () {
+Route::get('/farmer', function () {
     return view('farmer/index');
 });
 
@@ -81,7 +81,7 @@ Route::get('/farmAdmin', function () {
 
 // Defining default routes for cukNinja Manager sub-system
 
-Route::get('/managerLogin', function () {
+Route::get('/manager', function () {
     return view('manager/index');
 });
 

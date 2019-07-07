@@ -2,6 +2,7 @@
   define('TITLE','cukNinja Manager');
   define('DESC', 'Under_construction');
   define('E_MAIL', 'timothykidega@gmail.com');
+  define('SYS_ONE', 'cukNinja');
 ?>
 <!DOCTYPE html>
 <html lang='en'>
@@ -10,17 +11,17 @@
     <meta charset='UTF-8'>
     <meta name='Description' content = <?php echo DESC; ?> >
     <meta name='Developer' content = <?php print E_MAIL; ?> >
+    <link rel='stylesheet' type='text/css' href='/css/app.css' />
   </head>
   <body>
     <div class='container'>
       <div class='pg_header' >
-        @yield('header')
         <?php
           //Where 'header' describes the desired section in the view
           //Add some logic here
         ?>
-        <h2>cukNinja Manager - Universal Header Section</h2>
-        <?php //Include source code for site header here ?>
+        @yield('header')
+        @include('scripts.header_03')
       </div>
       <div style='clear:both'></div>
 
@@ -30,7 +31,7 @@
           //Add some logic here
         ?>
         @yield('navigator')
-        <h2>cukNinja Manager - Universal Navigator Section</h2>
+        @include('scripts.navbar_03')
       </div>
       <div style='clear:both'></div>
 
@@ -53,7 +54,7 @@
           //Add some logic here
         ?>
         @yield('footer')
-        <h2>cukNinja Manager - Universal Footer Section</h2>
+        @include('scripts.footer_03')
       </div>
       <div style='clear:both'></div>
     </div>
