@@ -14,21 +14,21 @@
 <?php
   //This section is Universal to the sub-system and loaded via the layout
 ?>
-@include('scripts.navbar_00B')
+@include('scripts.navbar_00D')
 @endsection
 
-@section('about_content')
-  <h3>Public About Page - Custom Page Content Section. </h3>
+@section('tc_content')
+  <h3>Public T & C Page - Custom Page Content Section. </h3>
   <?php
     //This section is customizable based on sub-system requirements
     $t = rand(12,18);
-      if( $t > 15){
-        print("t is greater than fifteen" . ' ' . "where t =" . ' '. $t);
-      }else if( $t < 15){
-        print("t is less than fifteen"  . ' ' . "where t =" . ' ' .$t);
-      }else{
-        print("t is equal to fifteen" . ' ' . "where t =" . ' '. $t);
-      }
+    if( $t > 15){
+      print("t is greater than fifteen" . ' ' . "where t =" . ' '. $t);
+    }else if( $t < 15){
+      print("t is less than fifteen"  . ' ' . "where t =" . ' ' .$t);
+    }else{
+      print("t is equal to fifteen" . ' ' . "where t =" . ' '. $t);
+    }
   ?>
 @endsection
 

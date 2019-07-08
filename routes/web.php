@@ -35,6 +35,18 @@ Route::get('/contact', function () {
     return view('genHappiness/contact');
 });
 
+Route::get('/faq', function () {
+    return view('genHappiness/faq');
+});
+
+Route::get('/legal', function () {
+    return view('genHappiness/legal');
+});
+
+Route::get('/t&c', function () {
+    return view('genHappiness/tc');
+});
+
 // Defining default routes for cukNinja Finance sub-system
 
 Route::get('/finance', function () {
@@ -56,6 +68,7 @@ Route::get('/vslaAdmin', function () {
 Route::get('/vslaSiteAdmin', function () {
     return view('finance/site_admin');
 });
+
 
 // Defining default routes for cukNinja Farmer sub-system
 

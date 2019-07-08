@@ -10,13 +10,12 @@
     </div>
     <div id='navbar' class='collapse navbar-collapse'>
       <ul class='nav navbar-nav'>
-        <li><a class='navbar-brand' href='/'
-          title='Navigate back to cukNinja home page'>Home</a></li>
-        <li><a href='/search'
-          title='Click to query database'>Search</a></li>
-        <li><a href='/about' title='Click to view "About Us" '>About</a></li>
+        <li><a href='/'
+          title='Click to go to the public home page'>Home</a></li>
+        <li><a href='/about'
+          title='Click to go to the public home page'>About</a></li>
         <li><a href='/contact'
-          title='Click to contact us'>Contact</a></li>
+          title='Click to go to the public home page'>Contact</a></li>
       </ul>
     </div>
   </div>

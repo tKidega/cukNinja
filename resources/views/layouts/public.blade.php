@@ -31,7 +31,6 @@
           //Add some logic here....
         ?>
         @yield('navigator')
-        @include('scripts.navbar_00')
       </div>
       <div style='clear:both'></div>
 
@@ -44,6 +43,9 @@
         @yield('search_content')
         @yield('about_content')
         @yield('contact_content')
+        @yield('faq_content')
+        @yield('legal_content')
+        @yield('tc_content')
       </div>
       <div style='clear:both'></div>
 
