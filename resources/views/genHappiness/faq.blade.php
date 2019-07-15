@@ -14,10 +14,11 @@
 <?php
   //This section is Universal to the sub-system and loaded via the layout
 ?>
-@include('scripts.navbar_00D')
+@include('scripts.siteNav.navbar_00D')
 @endsection
 
 @section('faq_content')
+<div class='container' id='def_login'>
   <h3>Public FAQ Page - Custom Page Content Section. </h3>
   <?php
     //This section is customizable based on sub-system requirements
@@ -30,6 +31,7 @@
       print("t is equal to fifteen" . ' ' . "where t =" . ' '. $t);
     }
   ?>
+</div>
 @endsection
 
 @section('footer')

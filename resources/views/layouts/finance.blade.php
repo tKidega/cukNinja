@@ -21,7 +21,7 @@
           //Add some logic here
         ?>
         @yield('header')
-        @include('scripts.header_01')
+        @include('scripts.siteHeader.header_01')
       <div style='clear:both'></div>
 
       <div class='pg_navigator' >
@@ -30,7 +30,7 @@
           //Add some logic here
         ?>
         @yield('navigator')
-        @include('scripts.navbar_01')
+        @include('scripts.siteNav.navbar_01')
       </div>
       <div style='clear:both'></div>
 
@@ -53,7 +53,7 @@
           //Add som logic here
         ?>
         @yield('footer')
-        @include('scripts.footer_01')
+        @include('scripts.siteFooter.footer_01')
       </div>
       <div style='clear:both'></div>
     </div>

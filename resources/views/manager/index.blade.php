@@ -17,6 +17,7 @@
 @endsection
 
 @section('login_content')
+<div class='container' id='def_login'>
   <h3>cikNinja Manager login page - Custom Page Content Section</h3>
   <?php
     //This section is customizable based on sub-system requirements
@@ -38,6 +39,7 @@
       print("t is equal to five" . ' ' . "where t =" . ' '. $t);
     }
   ?>
+</div>
 @endsection
 
 @section('footer')

@@ -21,7 +21,7 @@
           //Add some logic here
         ?>
         @yield('header')
-        @include('scripts.header_00')
+        @include('scripts.siteHeader.header_00')
       </div>
       <div style='clear:both'></div>
 
@@ -55,7 +55,7 @@
         //Where 'footer' describes the desired section in the view
         //Add some logic here
       ?>
-        @include('scripts.footer_00')
+        @include('scripts.siteFooter.footer_00')
       </div>
       <div style='clear:both'></div>
     </div>

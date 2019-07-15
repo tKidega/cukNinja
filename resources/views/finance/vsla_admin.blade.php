@@ -17,6 +17,7 @@
 @endsection
 
 @section('admin_content')
+<div class='container' id='def_login'>
   <h3>cikNinja Finance - VSLA Admin page - Custom Page Content Section</h3>
   <?php
     //This section is customizable based on system requirements
@@ -29,6 +30,7 @@
       print("t is equal to five" . ' ' . "where t =" . ' '. $t);
     }
   ?>
+</div>
 @endsection
 
 @section('footer')
