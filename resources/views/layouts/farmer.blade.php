@@ -31,7 +31,7 @@
           //Add some logic here
         ?>
         @yield('navigator')
-        @include('scripts.siteNav.navbar_02')
+        @include('scripts.siteNav.farmer.navbar_02')
       </div>
       <div style='clear:both'></div>
 

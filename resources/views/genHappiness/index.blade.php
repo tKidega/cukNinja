@@ -14,7 +14,7 @@
 <?php
   //This section is Universal to the sub-system and loaded via the layout
 ?>
-@include('scripts.siteNav.navbar_00A')
+@include('scripts.siteNav.public.navbar_00A')
 @endsection
 
 @section('home_content')

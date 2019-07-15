@@ -30,7 +30,7 @@
           //Add some logic here
         ?>
         @yield('navigator')
-        @include('scripts.siteNav.navbar_01')
+        @include('scripts.siteNav.finance.navbar_01')
       </div>
       <div style='clear:both'></div>
 

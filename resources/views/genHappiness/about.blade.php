@@ -14,7 +14,7 @@
 <?php
   //This section is Universal to the sub-system and loaded via the layout
 ?>
-@include('scripts.siteNav.navbar_00B')
+@include('scripts.siteNav.public.navbar_00B')
 @endsection
 
 @section('about_content')

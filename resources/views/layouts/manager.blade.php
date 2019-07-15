@@ -31,7 +31,7 @@
           //Add some logic here
         ?>
         @yield('navigator')
-        @include('scripts.siteNav.navbar_03')
+        @include('scripts.siteNav.manager.navbar_03')
       </div>
       <div style='clear:both'></div>
 
