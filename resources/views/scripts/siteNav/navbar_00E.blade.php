@@ -12,8 +12,8 @@
       <ul class='nav navbar-nav'>
         <li><a class='navbar-brand' href='/'
           title='Return to the public home page'>Home</a></li>
-        <li><a href='/legal'
-          title='Click to query system'>Legal</a></li>
+        <li><a href='/faq'
+          title='Click to query system'>F.A.Q</a></li>
         <li><a href='/about'
           title='Click to view "About Us" '>About</a></li>
       </ul>
