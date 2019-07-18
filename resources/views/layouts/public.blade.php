@@ -3,6 +3,7 @@
   define('DESC', 'Under_construction');
   define('E_MAIL', 'timothykidega@gmail.com');
   define('SYS_ONE', 'cukNinja');
+  define('PHONE', '+256-756-023-283');
 ?>
 <!DOCTYPE html>
 <html lang='en'>
@@ -11,11 +12,12 @@
     <meta charset='UTF-8'>
     <meta name='Description' content = <?php echo DESC; ?> >
     <meta name='Developer'   content = <?php echo E_MAIL; ?> >
+    <meta name='Contact'   content = <?php echo PHONE; ?> >
     <link rel='stylesheet' type='text/css' href='css/app.css' />
   </head>
   <body>
-    <div class='container'>
-      <div class='pg_header' >
+    <div class='container' id='wrapper'>
+      <div id='pg_header' >
         <?php
           //Where 'header' describes the desired section in the view
           //Add some logic here
@@ -25,7 +27,7 @@
       </div>
       <div style='clear:both'></div>
 
-      <div class='pg_navigator' >
+      <div id='pg_navigator' >
         <?php
           //Where 'navigator' describes the desired section in the view
           //Add some logic here....
@@ -34,7 +36,7 @@
       </div>
       <div style='clear:both'></div>
 
-      <div class='pg_content' >
+      <div id='def_content' >
         <?php
           //Where 'home_content' describes the desired section in the view
           //Add some logic here....
@@ -46,10 +48,16 @@
         @yield('faq_content')
         @yield('legal_content')
         @yield('tc_content')
+        
       </div>
       <div style='clear:both'></div>
 
-      <div class='pg_footer' >
+      <div id='sysMaquee'>
+        @include('scripts.bulletin.public_board')
+      </div>
+      <div style='clear:both'></div>
+
+      <div id='pg_footer' >
         @yield('footer')
       <?php
         //Where 'footer' describes the desired section in the view

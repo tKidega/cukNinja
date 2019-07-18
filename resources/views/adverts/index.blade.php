@@ -2,7 +2,7 @@
 <?php
   //This template loads default settings that are re-usable by the system
 ?>
-@extends('layouts.farmer')
+@extends('layouts.adverts')
 
 @section('header')
 <?php
@@ -14,27 +14,27 @@
 <?php
   //This section is Universal to the sub-system and loaded via the layout
 ?>
+@include('scripts.siteNav.adverts.navbar_00')
 @endsection
 
-@section('login_content')
+@section('advert_content')
 <div class='container' id='def_login'>
+  <div id='graphSummary'>
+
+
+  </div>
+  <div style='clear:both'></div>
+
   <div id='sysLogin'>
-    <header>
-      <h3 class='mainTitle'>Registered User Login</h3>
-    </header>
-  <?php
-    //This section is customizable based on system requirements
-    $t = rand(2,8);
-    if( $t > 5){
-      print("t is greater than five" . ' ' . "where t =" . ' '. $t);
-    }else if( $t < 5){
-      print("t is less than five"  . ' ' . "where t =" . ' ' .$t);
-    }else{
-      print("t is equal to five" . ' ' . "where t =" . ' '. $t);
-    }
+    <h3>Classifieds sub-system - Custom Page Content Section</h3>
+    <?php
+      //sub-system content here
     ?>
   </div>
+  <div style='clear:both'></div>
+
 </div>
+<div style='clear:both'></div>
 @endsection
 
 @section('footer')

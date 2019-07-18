@@ -1,5 +1,5 @@
 <?php
-  define('TITLE','cukNinja Farmer');
+  define('TITLE','cukNinja Classifieds');
   define('DESC', 'Under_construction');
   define('E_MAIL', 'timothykidega@gmail.com');
   define('SYS_ONE', 'cukNinja');
@@ -33,7 +33,6 @@
           //Add some logic here
         ?>
         @yield('navigator')
-        @include('scripts.siteNav.farmer.navbar_02')
       </div>
       <div style='clear:both'></div>
 
@@ -42,11 +41,8 @@
           //Where 'content' describes the desired section in the view
           //Add some content here
         ?>
-        @yield('login_content')
-        @yield('home_content')
-        @yield('guest_content')
-        @yield('agent_content')
-        @yield('siteAdmin_content')
+        @yield('advert_content')
+
       </div>
       <div style='clear:both'></div>
 
@@ -56,7 +52,7 @@
           //Add some logic here
         ?>
         @yield('footer')
-        @include('scripts.siteFooter.footer_02')
+        @include('scripts.siteFooter.footer_00')
       </div>
       <div style='clear:both'></div>
     </div>

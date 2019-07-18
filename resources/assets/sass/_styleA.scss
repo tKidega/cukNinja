@@ -1,0 +1,116 @@
+// Defining custom CSS setings for the public section sub-system.
+// Page content
+#graphSummary{
+  margin: 1.5px -15.5px;
+  width: 55%;
+  height: 430px;
+  border: 1px solid white;
+  position: absolute;
+}#wklySummary,#monthlySummary,#yrlySummary{
+  margin-top: 1.5px;
+  border: none;
+  min-width: 250px;
+}#wklySummary h2,#monthlySummary h2,#yrlySummary h2{
+  margin-top: 0.5px;
+  font-size: 0.95em;
+  color: rgba(65,65,65,0.45);
+}#wklySummary h2:hover,#monthlySummary h2:hover,#yrlySummary h2:hover{
+  color: rgba(65,65,65,0.75);
+  cursor: pointer;
+  transition: all 0.75s;
+}#wklySummary,#monthlySummary{
+  margin-right: 1.5px;
+  width: 45%;
+  height: 206.5px;
+}#wklySummary{
+  position: absolute;
+}#monthlySummary{
+  float: right;
+}#yrlySummary{
+  width: 99.9%;
+  height: 217.5px;
+}.graph,.graphTitle{
+  margin: 1px auto;
+  width: 99.9%;
+  border: 1px solid white;
+}.graph{
+  height: 190px;
+}.graph img{
+  margin: -1px auto;
+  width: 99.9%;
+  height: 195px;
+}.graphTitle{
+  height: 12.5px;
+}#graphTitle{
+  margin: 15px auto;
+  width: 50%;
+  height: 15px;
+  border: none;
+}
+// Custom settings for System guide animation
+#sysLogin article{
+  margin-top: 2.5px;
+}
+span[class^='dot_']{
+	color: rgba(65,65,65,0.75);
+	font-size: 0.95em;
+	opacity: 0;
+}
+.dot_one{
+	animation: dot_one 3.5s infinite linear;
+}
+.dot_two{
+	animation: dot_two 3.5s infinite linear;
+}
+.dot_three{
+	animation: dot_three 3.5s infinite linear;
+}
+@keyframes dot_one{
+	0%{
+	   opacity: 0;
+	}15%{
+		 opacity: 1;
+	}45%{
+	   opacity: 1;
+	}100%{
+		 opacity: 0;
+  }
+}
+@keyframes dot_two{
+	0%{
+		opacity: 0;
+	}25%{
+		opacity: 1;
+	}45%{
+		opacity: 1;
+	}100%{
+		opacity: 0;
+	}
+}
+@keyframes dot_three{
+	0%{
+		opacity: 0;
+	}45%{
+		opacity: 1;
+	}75%{
+		opacity: 1;
+	}100%{
+		opacity: 0;
+	}
+}
+// Pubic buletin board
+#sysMaquee{
+  margin: -5px auto;
+  width: 99.9%;
+  height: 22.5px;
+  border: 1px solid white;
+}#sysMaquee marquee{
+  border: -1px solid red;
+  width: 99.999%;
+  height: 20px;
+  margin: 1px auto;
+}#sysMaquee marquee h5{
+  font-size: 0.95em;
+  margin-top: 1.5px;
+  color: rgba(65,65,65,0.85);
+}

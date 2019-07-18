@@ -23,6 +23,10 @@ Route::get('/', function () {
     return view('genHappiness/index');
 });
 
+Route::get('/home', function () {
+    return view('genHappiness/index');
+});
+
 Route::get('/search', function () {
     return view('genHappiness/search');
 });
@@ -90,6 +94,12 @@ Route::get('/farmAgent', function () {
 
 Route::get('/farmAdmin', function () {
     return view('farmer/farm_admin');
+});
+
+// Defining defaut routes for the system adverts sub-ssystem
+
+Route::get('/adverts', function () {
+    return view('adverts/index');
 });
 
 // Defining default routes for cukNinja Manager sub-system

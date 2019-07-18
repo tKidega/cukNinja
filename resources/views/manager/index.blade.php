@@ -18,27 +18,30 @@
 
 @section('login_content')
 <div class='container' id='def_login'>
-  <h3>cikNinja Manager login page - Custom Page Content Section</h3>
-  <?php
-    //This section is customizable based on sub-system requirements
-    $t = rand(2,8);
-    $access = true;
-
-    if($access != true){
-      print('Access Denied');
-      die();
-    }else{
-      print'<h2 class=""> cukNinja-Manager Login </h2>';
-    }
-
-    if( $t > 5){
-      print("t is greater than five" . ' ' . "where t =" . ' '. $t);
-    }else if( $t < 5){
-      print("t is less than five"  . ' ' . "where t =" . ' ' .$t);
-    }else{
-      print("t is equal to five" . ' ' . "where t =" . ' '. $t);
-    }
-  ?>
+  <div id='sysLogin'>
+    <header>
+      <?php
+        $access = true;
+        if($access != true){
+          print('Access Denied');
+          die();
+        }else{
+          print'<h3 class="mainTitle">Registered User Login</h3>' ;
+        }
+      ?>
+    </header>
+    <?php
+      //This section is customizable based on sub-system requirements
+      $t = rand(2,8);
+      if( $t > 5){
+        print("t is greater than five" . ' ' . "where t =" . ' '. $t);
+      }else if( $t < 5){
+        print("t is less than five"  . ' ' . "where t =" . ' ' .$t);
+      }else{
+        print("t is equal to five" . ' ' . "where t =" . ' '. $t);
+      }
+    ?>
+  </div>
 </div>
 @endsection
 
