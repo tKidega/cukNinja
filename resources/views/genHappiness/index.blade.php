@@ -18,6 +18,7 @@
 @endsection
 
 @section('home_content')
+
 <div class='container' id='def_login'>
 
   <div id='dataSummary'>
@@ -35,6 +36,7 @@
 
 </div>
 <div style='clear:both'></div>
+
 @endsection
 
 @section('footer')

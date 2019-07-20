@@ -1,13 +1,6 @@
 // Defining custom CSS setings for the public section sub-system.
 // Home Page content
-#dataSummary{//This is universal to the system
-  margin: 1.5px -15.5px;
-  width: 55%;
-  min-width: 550px;
-  height: 430px;
-  border: 1px solid white;
-  position: absolute;
-}#wklySummary,#monthlySummary,#yrlySummary{
+#wklySummary,#monthlySummary,#yrlySummary{
   margin-top: 1.5px;
   border: none;
 }#wklySummary h2,#monthlySummary h2,#yrlySummary h2{
@@ -98,8 +91,8 @@ span[class^='dot_']{
 		opacity: 0;
 	}
 }
-#sysLogin section{
-  margin-top: -2.5px;
+#sysLogin section,#sysLogin section ul li{
+  margin-top: -1.5px;
 }
 // Public buletin board
 #sysMaquee{

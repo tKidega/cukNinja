@@ -18,6 +18,7 @@
 @endsection
 
 @section('faq_content')
+
 <div class='container' id='def_login'>
 
   <div id='dataSummary'>
@@ -37,10 +38,13 @@
       @include('scripts.content.genHappiness.faq.adverts')
     </div>
     <div style='clear:both'></div>
+
   </div>
   <div style='clear:both'></div>
 
 </div>
+<div style='clear:both'></div>
+
 @endsection
 
 @section('footer')

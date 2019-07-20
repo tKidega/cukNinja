@@ -18,21 +18,24 @@
 @endsection
 
 @section('admin_content')
+
 <div class='container' id='def_login'>
 
   <div id='dataSummary'>
-    <h3 class='main4Title'>VSLA administrator</h3>
+    <h3 class='main2Title'>VSLA administrator</h3>
     @include('scripts.content.finance.vslaAdmin.mainContent')
   </div>
   <div style='clear:both'></div>
 
   <div id='sysLogin'>
-    <h3 class='main4Title'>admin controll panel</h3>
+    <h3 class='main2Title'>admin controll panel</h3>
     @include('scripts.content.finance.vslaAdmin.controllPanel')
   </div>
   <div style='clear:both'></div>
 
 </div>
+<div style='clear:both'></div>
+
 @endsection
 
 @section('footer')

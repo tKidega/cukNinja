@@ -18,16 +18,17 @@
 @endsection
 
 @section('guest_content')
+
 <div class='container' id='def_login'>
 
   <div id='dataSummary'>
-    <h3 class='main4Title'>VSLA user dashboard</h3>
+    <h3 class='main2Title'>VSLA user dashboard</h3>
     @include('scripts.content.finance.vslaUser.mainContent')
   </div>
   <div style='clear:both'></div>
 
   <div id='sysLogin'>
-    <h3 class='main4Title'>user controll panel</h3>
+    <h3 class='main2Title'>user controll panel</h3>
     @include('scripts.content.finance.vslaUser.controllPanel')
     ?>
   </div>
@@ -35,6 +36,7 @@
 
 </div>
 <div style='clear:both'></div>
+
 @endsection
 
 @section('footer')

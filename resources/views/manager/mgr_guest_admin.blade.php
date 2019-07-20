@@ -17,21 +17,24 @@
 @endsection
 
 @section('guest_content')
+
 <div class='container' id='def_login'>
 
   <div id='dataSummary'>
-    <h3>admin panel one</h3>
-    @include('scripts.content.manager.guestAdmin.panelOne')
+    <h3 class='main2Title'>guest admin</h3>
+    @include('scripts.content.manager.guestAdmin.mainContent')
   </div>
   <div style='clear:both'></div>
 
   <div id='sysLogin'>
-    <h3>admin panel two</h3>
-    @include('scripts.content.manager.guestAdmin.panelTwo')
+    <h3 class='main2Title'>admin panel two</h3>
+    @include('scripts.content.manager.guestAdmin.controllPanel')
   </div>
   <div style='clear:both'></div>
 
 </div>
+<div style='clear:both'></div>
+
 @endsection
 
 @section('footer')

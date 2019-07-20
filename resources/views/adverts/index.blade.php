@@ -18,21 +18,24 @@
 @endsection
 
 @section('advert_content')
+
 <div class='container' id='def_login'>
+
   <div id='dataSummary'>
-    <h3 class='main4Title'>cukNinja classifieds</h3>
+    <h3 class='main2Title'>cukNinja classifieds</h3>
     @include('scripts.content.adverts.home.mainContent')
   </div>
   <div style='clear:both'></div>
 
   <div id='sysLogin'>
-    <h3 class='main4Title'>controll panel</h3>
+    <h3 class='main2Title'>controll panel</h3>
     @include('scripts.content.adverts.home.controllPanel')
   </div>
   <div style='clear:both'></div>
 
 </div>
 <div style='clear:both'></div>
+
 @endsection
 
 @section('footer')

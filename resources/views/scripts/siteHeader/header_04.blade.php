@@ -1,6 +1,6 @@
 <?php
 // Defining custom header settings for the public section
-$motto = 'take controll. Manage...';
+$motto = 'Under controll. Manager';
 ?>
 <div class='container' id='site_header'>
   <div id='logo'>

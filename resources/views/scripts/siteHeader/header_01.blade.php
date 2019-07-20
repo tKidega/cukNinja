@@ -1,6 +1,6 @@
 <?php
 // Defining custom header settings for the public section
-$motto = ' Save for a better future... ';
+$motto = 'Saving for a better future';
 ?>
 <div class='container' id='site_header'>
 

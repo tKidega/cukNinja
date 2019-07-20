@@ -18,19 +18,24 @@
 @endsection
 
 @section('agent_content')
+
 <div class='container' id='def_login'>
+
   <div id='dataSummary'>
-    <h3 class='main4Title'>cukNinja-farmer agent</h3>
+    <h3 class='main2Title'>sub-system agent</h3>
     @include('scripts.content.farmer.agent.mainContent')
   </div>
   <div style='clear:both'></div>
 
   <div id='sysLogin'>
-    <h3 class='main4Title'>controllPanel</h3>
+    <h3 class='main2Title'>controllPanel</h3>
     @include('scripts.content.farmer.agent.controllPanel')
   </div>
   <div style='clear:both'></div>
+
 </div>
+<div style='clear:both'></div>
+
 @endsection
 
 @section('footer')

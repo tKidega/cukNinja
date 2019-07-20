@@ -126,10 +126,19 @@ html, body, .container{
   width: 99.9%;
   min-width: 1100px;
   height: 435px;
-  border-bottom: 1px solid gray;
+  border: none;
 }
 // Defining custom settings for sub-system login pages
 // Applied same configuration structure to the system home page
+#dataSummary{
+  //This is universal to the system
+  margin: 1.5px -15.5px;
+  width: 55%;
+  min-width: 550px;
+  height: 430px;
+  border: 1px solid white;
+  position: absolute;
+}
 #sysLogin{
   margin: 1px -10px;
   width: 40%;
@@ -218,10 +227,13 @@ html, body, .container{
   font-size: 1.3em;
 }
 // Text settings
-.sysText{
-  font-size: 0.95em;
+.sysText, .sys2Text,.sys3Text{
   color: default;
   text-align: justify;
+}.sysText{
+  font-size: 0.75em;
 }.sys2Text{
-  font-size: 1.2em;
+  font-size: 0.85em;
+}.sys3Text{
+  font-size: 0.95em;
 }

@@ -18,6 +18,7 @@
 @endsection
 
 @section('login_content')
+
 <div class='container' id='def_login'>
 
   <div id='dataSummary'>
@@ -26,12 +27,14 @@
   <div style='clear:both'></div>
 
   <div id='sysLogin'>
-    <h3 class='main4Title'> VSLA user login</h3>
+    <h3 class='main2Title'>VSLA user login</h3>
     @include('scripts.content.finance.login.frmVSLA')
   </div>
   <div style='clear:both'></div>
 
 </div>
+<div style='clear:both'></div>
+
 @endsection
 
 @section('footer')

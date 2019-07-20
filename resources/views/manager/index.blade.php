@@ -17,9 +17,11 @@
 @endsection
 
 @section('login_content')
+
 <div class='container' id='def_login'>
+
   <div id='dataSummary'>
-    
+
   </div>
   <div style='clear:both'></div>
 
@@ -28,7 +30,10 @@
     @include('scripts.content.manager.login.mgrLogin')
   </div>
   <div style='clear:both'></div>
+
 </div>
+<div style='clear:both'></div>
+
 @endsection
 
 @section('footer')

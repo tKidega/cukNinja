@@ -9,7 +9,7 @@
       print $msg3;
       die();
     }else{
-      print'<h3 class="mainTitle">Registered User Login</h3>' ;
+      print'<h3 class="main2Title">manager login</h3>' ;
     }
   ?>
 </header>

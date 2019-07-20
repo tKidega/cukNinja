@@ -1,6 +1,6 @@
 <?php
 // Defining custom header settings for the public section
-$motto = 'Informed agri-business...  ';
+$motto = 'Informed in agri-business';
 ?>
 <div class='container' id='site_header'>
   <div id='logo'>
@@ -15,7 +15,8 @@ $motto = 'Informed agri-business...  ';
   <div style='clear:both'></div>
 
   <div id='slogan'>
-    <h4 class='siteSlogan'> <?php echo $motto; ?>  </h4>
+    <h4 class='siteSlogan'>
+      <?php echo $motto; ?>  </h4>
   </div>
   <div style='clear:both'></div>
 
