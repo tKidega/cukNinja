@@ -19,18 +19,19 @@
 
 @section('search_content')
 <div class='container' id='def_login'>
-  <h3>Public Search Page - Custom Page Content Section</h3>
-  <?php
-    //This section is customizable based on sub-system requirements
-    $t = rand(2,8);
-    if( $t > 5){
-      print("t is greater than five" . ' ' . "where t =" . ' '. $t);
-    }else if( $t < 5){
-      print("t is less than five"  . ' ' . "where t =" . ' ' .$t);
-    }else{
-      print("t is equal to five" . ' ' . "where t =" . ' '. $t);
-    }
-  ?>
+
+  <div id='dataSummary'>
+    <h3 class='main2Title'>current market prices</h3>
+    @include('scripts.content.genHappiness.search.tblResults')
+  </div>
+  <div style='clear:both'></div>
+
+  <div id='sysLogin'>
+    <h3 class='main2Title'>customize your search below</h3>
+    @include('scripts.content.genHappiness.search.frmSearch')
+  </div>
+  <div style='clear:both'></div>
+
 </div>
 @endsection
 

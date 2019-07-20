@@ -18,108 +18,35 @@
 */
 
 // Defining default routes for the public section sub-system
-
-Route::get('/', function () {
-    return view('genHappiness/index');
-});
-
-Route::get('/home', function () {
-    return view('genHappiness/index');
-});
-
-Route::get('/search', function () {
-    return view('genHappiness/search');
-});
-
-Route::get('/about', function () {
-    return view('genHappiness/about');
-});
-
-Route::get('/contact', function () {
-    return view('genHappiness/contact');
-});
-
-Route::get('/faq', function () {
-    return view('genHappiness/faq');
-});
-
-Route::get('/legal', function () {
-    return view('genHappiness/legal');
-});
-
-Route::get('/t&c', function () {
-    return view('genHappiness/tc');
-});
+Route::get('/', 'PublicRoutes@home');
+Route::get('/home', 'PublicRoutes@home');
+Route::get('/search', 'PublicRoutes@search');
+Route::get('/about', 'PublicRoutes@about');
+Route::get('/faq', 'PublicRoutes@faq');
+Route::get('/legal', 'PublicRoutes@legal');
+Route::get('/contact', 'PublicRoutes@contact');
+Route::get('/t&c', 'PublicRoutes@tnc');
 
 // Defining default routes for cukNinja Finance sub-system
-
-Route::get('/finance', function () {
-    return view('finance/index');
-});
-
-Route::get('/financeHome', function () {
-    return view('finance/vsla_home');
-});
-
-Route::get('/vslaUser', function () {
-    return view('finance/vsla_user');
-});
-
-Route::get('/vslaAdmin', function () {
-    return view('finance/vsla_admin');
-});
-
-Route::get('/vslaSiteAdmin', function () {
-    return view('finance/site_admin');
-});
-
+Route::get('/vsla', 'FinanceRoutes@vslaLogin');
+Route::get('/vslaHome', 'FinanceRoutes@vslaHome');
+Route::get('/vslaUser', 'FinanceRoutes@vslaUser');
+Route::get('/vslaAdmin', 'FinanceRoutes@vslaAdmin');
+Route::get('/vslaSiteAdmin', 'FinanceRoutes@vslaSiteAdmin');
 
 // Defining default routes for cukNinja Farmer sub-system
-
-Route::get('/farmer', function () {
-    return view('farmer/index');
-});
-
-Route::get('/farmerHome', function () {
-    return view('farmer/farm_home');
-});
-
-Route::get('/farmUser', function () {
-    return view('farmer/farm_guest');
-});
-
-Route::get('/farmAgent', function () {
-    return view('farmer/farm_agent');
-});
-
-Route::get('/farmAdmin', function () {
-    return view('farmer/farm_admin');
-});
+Route::get('/farmer', 'FarmerRoutes@farmerLogin');
+Route::get('/farmerHome', 'FarmerRoutes@farmerHome');
+Route::get('/farmerGuest', 'FarmerRoutes@farmerGuest');
+Route::get('/farmerAgent', 'FarmerRoutes@farmerAgent');
+Route::get('/farmerAdmin', 'FarmerRoutes@farmerAdmin');
 
 // Defining defaut routes for the system adverts sub-ssystem
-
-Route::get('/adverts', function () {
-    return view('adverts/index');
-});
+Route::get('/adverts', 'ClassifiedsRoutes@adverts');
 
 // Defining default routes for cukNinja Manager sub-system
-
-Route::get('/manager', function () {
-    return view('manager/index');
-});
-
-Route::get('/managerHome', function () {
-    return view('manager/mgr_home');
-});
-
-Route::get('/managerGuest', function () {
-    return view('manager/mgr_guest_admin');
-});
-
-Route::get('/managerAdmin', function () {
-    return view('manager/mgr_site_admin');
-});
-
-Route::get('/superAdmin', function () {
-    return view('manager/mgr_super_admin');
-});
+Route::get('/manager', 'ManagerRoutes@manager');
+Route::get('/managerHome', 'ManagerRoutes@managerHome');
+Route::get('/managerGuest', 'ManagerRoutes@managerGuest');
+Route::get('/managerAdmin', 'ManagerRoutes@managerAdmin');
+Route::get('/superAdmin', 'ManagerRoutes@superAdmin');

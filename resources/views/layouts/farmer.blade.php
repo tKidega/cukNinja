@@ -1,5 +1,5 @@
 <?php
-  define('TITLE','cukNinja Farmer');
+  define('TITLE','cukNinja Farmer sub-system');
   define('DESC', 'Under_construction');
   define('E_MAIL', 'timothykidega@gmail.com');
   define('SYS_ONE', 'cukNinja');
@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class='container' id='wrapper'>
-      <div class='pg_header' >
+      <div id='pg_header' >
         <?php
           //Where 'header' describes the desired section in the view
           //Add some logic here
@@ -27,17 +27,16 @@
       </div>
       <div style='clear:both'></div>
 
-      <div class='pg_navigator' >
+      <div id='pg_navigator' >
         <?php
           //Where 'navigator' describes the desired section in the view
           //Add some logic here
         ?>
         @yield('navigator')
-        @include('scripts.siteNav.farmer.navbar_02')
       </div>
       <div style='clear:both'></div>
 
-      <div class='pg_content' >
+      <div id='def_content' >
         <?php
           //Where 'content' describes the desired section in the view
           //Add some content here
@@ -50,7 +49,12 @@
       </div>
       <div style='clear:both'></div>
 
-      <div class='pg_footer' >
+      <div id='sysMaquee'>
+        @include('scripts.bulletin.farmer_board')
+      </div>
+      <div style='clear:both'></div>
+
+      <div id='pg_footer' >
         <?php
           //Where 'footer' describes the desired section in the view
           //Add some logic here

@@ -14,22 +14,22 @@
 <?php
   //This section is Universal to the sub-system and loaded via the layout
 ?>
+@include('scripts.siteNav.farmer.navbar_00A')
 @endsection
 
 @section('agent_content')
 <div class='container' id='def_login'>
-  <h3>cikNinja Farmer-Agent page - Custom Page Content Section</h3>
-  <?php
-    //This section is customizable based on system requirements
-    $t = rand(2,8);
-    if( $t > 5){
-      print("t is greater than five" . ' ' . "where t =" . ' '. $t);
-    }else if( $t < 5){
-      print("t is less than five"  . ' ' . "where t =" . ' ' .$t);
-    }else{
-      print("t is equal to five" . ' ' . "where t =" . ' '. $t);
-    }
-  ?>
+  <div id='dataSummary'>
+    <h3 class='main4Title'>cukNinja-farmer agent</h3>
+    @include('scripts.content.farmer.agent.mainContent')
+  </div>
+  <div style='clear:both'></div>
+
+  <div id='sysLogin'>
+    <h3 class='main4Title'>controllPanel</h3>
+    @include('scripts.content.farmer.agent.controllPanel')
+  </div>
+  <div style='clear:both'></div>
 </div>
 @endsection
 

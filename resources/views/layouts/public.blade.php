@@ -48,7 +48,7 @@
         @yield('faq_content')
         @yield('legal_content')
         @yield('tc_content')
-        
+
       </div>
       <div style='clear:both'></div>
 
@@ -58,11 +58,11 @@
       <div style='clear:both'></div>
 
       <div id='pg_footer' >
-        @yield('footer')
       <?php
         //Where 'footer' describes the desired section in the view
         //Add some logic here
       ?>
+        @yield('footer')
         @include('scripts.siteFooter.footer_00')
       </div>
       <div style='clear:both'></div>

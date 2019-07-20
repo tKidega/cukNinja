@@ -19,17 +19,15 @@
 
 @section('advert_content')
 <div class='container' id='def_login'>
-  <div id='graphSummary'>
-
-
+  <div id='dataSummary'>
+    <h3 class='main4Title'>cukNinja classifieds</h3>
+    @include('scripts.content.adverts.home.mainContent')
   </div>
   <div style='clear:both'></div>
 
   <div id='sysLogin'>
-    <h3>Classifieds sub-system - Custom Page Content Section</h3>
-    <?php
-      //sub-system content here
-    ?>
+    <h3 class='main4Title'>controll panel</h3>
+    @include('scripts.content.adverts.home.controllPanel')
   </div>
   <div style='clear:both'></div>
 

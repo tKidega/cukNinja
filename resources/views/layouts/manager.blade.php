@@ -1,5 +1,5 @@
 <?php
-  define('TITLE','cukNinja Manager');
+  define('TITLE','cukNinja Manager sub-system');
   define('DESC', 'Under_construction');
   define('E_MAIL', 'timothykidega@gmail.com');
   define('SYS_ONE', 'cukNinja');
@@ -12,32 +12,32 @@
     <meta charset='UTF-8'>
     <meta name='Description' content = <?php echo DESC; ?> >
     <meta name='Developer' content = <?php print E_MAIL; ?> >
-    <meta name='Contact' content= <?php echo PHONE; ?> >
+    <meta name='Contact' content = <?php echo PHONE; ?> >
     <link rel='stylesheet' type='text/css' href='/css/app.css' />
   </head>
   <body>
     <div class='container' id='wrapper'>
-      <div class='pg_header' >
+      <div id='pg_header' >
         <?php
           //Where 'header' describes the desired section in the view
           //Add some logic here
         ?>
         @yield('header')
-        @include('scripts.siteHeader.header_03')
+        @include('scripts.siteHeader.header_04')
       </div>
       <div style='clear:both'></div>
 
-      <div class='pg_navigator' >
+      <div id='pg_navigator' >
         <?php
           //Where 'navigator' describes the desired section in the view
           //Add some logic here
         ?>
         @yield('navigator')
-        @include('scripts.siteNav.manager.navbar_03')
+        @include('scripts.siteNav.manager.navbar_00A')
       </div>
       <div style='clear:both'></div>
 
-      <div class='pg_content' >
+      <div id='def_content' >
         <?php
           //Where 'content' describes the desired section in the view
           //Add some logic here
@@ -50,13 +50,18 @@
       </div>
       <div style='clear:both'></div>
 
-      <div class='pg_footer' >
+      <div id='sysMaquee'>
+        @include('scripts.bulletin.manager_board')
+      </div>
+      <div style='clear:both'></div>
+
+      <div id='pg_footer' >
         <?php
           //Where 'footer' describes the desired section in the view
           //Add some logic here
         ?>
         @yield('footer')
-        @include('scripts.siteFooter.footer_03')
+        @include('scripts.siteFooter.footer_04')
       </div>
       <div style='clear:both'></div>
     </div>

@@ -18,18 +18,19 @@
 
 @section('guest_content')
 <div class='container' id='def_login'>
-  <h3>cikNinja Guest-Manager page - Custom Page Content Section</h3>
-  <?php
-    //This section is customizable based on system requirements
-    $t = rand(2,8);
-    if( $t > 5){
-      print("t is greater than five" . ' ' . "where t =" . ' '. $t);
-    }else if( $t < 5){
-      print("t is less than five"  . ' ' . "where t =" . ' ' .$t);
-    }else{
-      print("t is equal to five" . ' ' . "where t =" . ' '. $t);
-    }
-  ?>
+
+  <div id='dataSummary'>
+    <h3>admin panel one</h3>
+    @include('scripts.content.manager.guestAdmin.panelOne')
+  </div>
+  <div style='clear:both'></div>
+
+  <div id='sysLogin'>
+    <h3>admin panel two</h3>
+    @include('scripts.content.manager.guestAdmin.panelTwo')
+  </div>
+  <div style='clear:both'></div>
+
 </div>
 @endsection
 

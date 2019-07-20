@@ -1,15 +1,15 @@
 // Defining custom CSS setings for the public section sub-system.
-// Page content
-#graphSummary{
+// Home Page content
+#dataSummary{//This is universal to the system
   margin: 1.5px -15.5px;
   width: 55%;
+  min-width: 550px;
   height: 430px;
   border: 1px solid white;
   position: absolute;
 }#wklySummary,#monthlySummary,#yrlySummary{
   margin-top: 1.5px;
   border: none;
-  min-width: 250px;
 }#wklySummary h2,#monthlySummary h2,#yrlySummary h2{
   margin-top: 0.5px;
   font-size: 0.95em;
@@ -98,7 +98,10 @@ span[class^='dot_']{
 		opacity: 0;
 	}
 }
-// Pubic buletin board
+#sysLogin section{
+  margin-top: -2.5px;
+}
+// Public buletin board
 #sysMaquee{
   margin: -5px auto;
   width: 99.9%;
@@ -114,3 +117,5 @@ span[class^='dot_']{
   margin-top: 1.5px;
   color: rgba(65,65,65,0.85);
 }
+
+// Search page.

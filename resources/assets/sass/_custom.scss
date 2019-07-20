@@ -98,8 +98,8 @@ html, body, .container{
 .dropdown-list a:hover{
   background-color: #ddd;
 }
-// To show the dropdown menu on user click(use JS to add this class to the
-// .dropdown content container when the user clicks on the button)
+// To show the dropdown menu on user click(use JS to add this class to
+// the dropdown content container when the user clicks on the button)
 .show{
   display: block;
 }
@@ -141,9 +141,10 @@ html, body, .container{
   width: 95.9%;
   height: 37.5px;
   border: none;
-}#sysLogin h3{
-  margin-top: -1.5px;
-  font-size: 2em;
+}#sysLogin h3, #dataSummary h3{
+// This settings are universal across the system
+  margin-top: 2.5px;
+  font-size: 1.5em;
 }
 // Defining custom settings for the site footer
 #footer{
@@ -184,6 +185,7 @@ html, body, .container{
 .mainTitle, .main2Title, .main3Title, .main4Title{
   text-align: center;
   color: gray;
+  text-transform: capitalize;
 }.mainTitle{
   font-size: 1.50em;
 }.main2Title{
@@ -211,7 +213,15 @@ html, body, .container{
   text-align: center;
   color: rgba(65,65,65,0.95);
 }.secTitle{
-  font-size: 1.3em;
-}.sec2Title{
   font-size: 1.5em;
+}.sec2Title{
+  font-size: 1.3em;
+}
+// Text settings
+.sysText{
+  font-size: 0.95em;
+  color: default;
+  text-align: justify;
+}.sys2Text{
+  font-size: 1.2em;
 }

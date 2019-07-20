@@ -1,3 +1,6 @@
+<?php
+  // This is a custom footer for cukNinja Farmer sub-system
+?>
 <div id='footer' class=' '>
   <footer class='footer'>
     <section id='copyright'>

@@ -8513,9 +8513,10 @@ body,
   border: none;
 }
 
-#sysLogin h3 {
-  margin-top: -1.5px;
-  font-size: 2em;
+#sysLogin h3,
+#dataSummary h3 {
+  margin-top: 2.5px;
+  font-size: 1.5em;
 }
 
 #footer {
@@ -8572,6 +8573,7 @@ body,
 .main4Title {
   text-align: center;
   color: gray;
+  text-transform: capitalize;
 }
 
 .mainTitle {
@@ -8620,16 +8622,27 @@ body,
 }
 
 .secTitle {
-  font-size: 1.3em;
-}
-
-.sec2Title {
   font-size: 1.5em;
 }
 
-#graphSummary {
+.sec2Title {
+  font-size: 1.3em;
+}
+
+.sysText {
+  font-size: 0.95em;
+  color: default;
+  text-align: justify;
+}
+
+.sys2Text {
+  font-size: 1.2em;
+}
+
+#dataSummary {
   margin: 1.5px -15.5px;
   width: 55%;
+  min-width: 550px;
   height: 430px;
   border: 1px solid white;
   position: absolute;
@@ -8640,7 +8653,6 @@ body,
 #yrlySummary {
   margin-top: 1.5px;
   border: none;
-  min-width: 250px;
 }
 
 #wklySummary h2,
@@ -8839,6 +8851,10 @@ span[class^='dot_'] {
   100% {
     opacity: 0;
   }
+}
+
+#sysLogin section {
+  margin-top: -2.5px;
 }
 
 #sysMaquee {
