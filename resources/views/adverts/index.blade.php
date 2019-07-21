@@ -11,10 +11,10 @@
 @endsection
 
 @section('navigator')
-<?php
-  //This section is Universal to the sub-system and loaded via the layout
-?>
-@include('scripts.siteNav.adverts.navbar_00')
+  <?php
+    //This section is customizable based on sub-system requirements.
+  ?>
+  @include('scripts.structure.siteNav.adverts.navbar_00')
 @endsection
 
 @section('advert_content')

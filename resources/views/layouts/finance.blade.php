@@ -23,7 +23,7 @@
           //Add some logic here
         ?>
         @yield('header')
-        @include('scripts.siteHeader.header_01')
+        @include('scripts.structure.siteHeader.header_01')
       </div>
       <div style='clear:both'></div>
 
@@ -51,7 +51,7 @@
       <div style='clear:both'></div>
 
       <div id='sysMaquee'>
-        @include('scripts.bulletin.finance_board')
+        @include('scripts.structure.bulletin.finance_board')
       </div>
       <div style='clear:both'></div>
 
@@ -61,7 +61,7 @@
         //Add some logic here
       ?>
         @yield('footer')
-        @include('scripts.siteFooter.footer_01')
+        @include('scripts.structure.siteFooter.footer_01')
       </div>
       <div style='clear:both'></div>
     </div>

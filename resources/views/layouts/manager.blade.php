@@ -23,7 +23,7 @@
           //Add some logic here
         ?>
         @yield('header')
-        @include('scripts.siteHeader.header_04')
+        @include('scripts.structure.siteHeader.header_04')
       </div>
       <div style='clear:both'></div>
 
@@ -33,7 +33,6 @@
           //Add some logic here
         ?>
         @yield('navigator')
-        @include('scripts.siteNav.manager.navbar_00A')
       </div>
       <div style='clear:both'></div>
 
@@ -51,7 +50,7 @@
       <div style='clear:both'></div>
 
       <div id='sysMaquee'>
-        @include('scripts.bulletin.manager_board')
+        @include('scripts.structure.bulletin.manager_board')
       </div>
       <div style='clear:both'></div>
 
@@ -61,7 +60,7 @@
           //Add some logic here
         ?>
         @yield('footer')
-        @include('scripts.siteFooter.footer_04')
+        @include('scripts.structure.siteFooter.footer_04')
       </div>
       <div style='clear:both'></div>
     </div>

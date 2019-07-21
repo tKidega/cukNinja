@@ -11,10 +11,10 @@
 @endsection
 
 @section('navigator')
-<?php
-  //This section is Universal to the sub-system and loaded via the layout
-?>
-@include('scripts.siteNav.finance.navbar_00A')
+  <?php
+    //This section is customizable based on sub-system requirements.
+  ?>
+  @include('scripts.structure.siteNav.finance.navbar_00A')
 @endsection
 
 @section('login_content')
@@ -27,7 +27,7 @@
   <div style='clear:both'></div>
 
   <div id='sysLogin'>
-    @include('scripts.content.finance.login.secHeader')
+    @include('scripts.structure.animation.secHeader')
     @include('scripts.content.finance.login.frmLogin')
   </div>
   <div style='clear:both'></div>

@@ -8440,6 +8440,7 @@ body,
   color: silver;
   padding: 2px;
   border: none;
+  height: 25px;
 }
 
 .dropdown-list {
@@ -8471,23 +8472,30 @@ body,
 }
 
 #subSys {
-  margin: 1.5px 1px;
-  width: 110px;
-  height: 45px;
+  margin: -11px 2.5px;
+  width: 45px;
+  height: 25px;
   border: none;
 }
 
-.subSys {
-  margin-top: 11.85px;
-  text-align: center;
-  color: gray;
-  font-size: 1.05em;
+#sysBtn {
+  margin: 1.5px auto;
+  width: 99.9;
+  height: 20px;
+  border: none;
 }
 
-.subSys:hover {
+#sysBtn h3 {
+  text-align: center;
+  color: gray;
+  font-size: 1.5em;
+}
+
+#sysBtn h3:hover {
   color: white;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 #def_login {
@@ -8602,7 +8610,7 @@ body,
 }
 
 .main5Title {
-  font-size: 1.10em;
+  font-size: 1.15em;
 }
 
 .subTitle,
@@ -8613,15 +8621,15 @@ body,
 }
 
 .subTitle {
-  font-size: 0.9em;
+  font-size: 0.95em;
 }
 
 .sub2Title {
-  font-size: 0.7em;
+  font-size: 0.85em;
 }
 
 .sub3Title {
-  font-size: 0.5em;
+  font-size: 0.75em;
 }
 
 .secTitle,

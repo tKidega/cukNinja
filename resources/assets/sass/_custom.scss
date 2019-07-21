@@ -74,6 +74,7 @@ html, body, .container{
   color: silver;
   padding: 2px;
   border: none;
+  height: 25px;
 }
 // The Drop-down content (Hidden by default)
 .dropdown-list{
@@ -105,19 +106,23 @@ html, body, .container{
 }
 // Custom font settings for sub-systems
 #subSys{
-  margin: 1.5px 1px;
-  width: 110px;
-  height: 45px;
+  margin: -11px 2.5px;
+  width: 45px;
+  height: 25px;
   border: none;
-}
-.subSys{
-  margin-top: 11.85px;
+}#sysBtn{
+  margin: 1.5px auto;
+  width: 99.9;
+  height: 20px;
+  border: none;
+}#sysBtn h3{
   text-align: center;
   color: gray;
-  font-size: 1.05em;
-}.subSys:hover{
+  font-size: 1.5em;
+}#sysBtn h3:hover{
   color: white;
   transition: all 0.5s;
+  cursor: pointer;
 }
 // Defining custom settings for page content Section
 // Applied same configuration structure to the system home page
@@ -204,18 +209,18 @@ html, body, .container{
 }.main4Title{
   font-size: 1.20em;
 }.main5Title{
-  font-size: 1.10em;
+  font-size: 1.15em;
 }
 // sub Headings
 .subTitle, .sub2Title, .sub3Title{
   text-align: center;
   color: rgba(65,65,65,0.95);
 }.subTitle{
-  font-size: 0.9em;
+  font-size: 0.95em;
 }.sub2Title{
-  font-size: 0.7em;
+  font-size: 0.85em;
 }.sub3Title{
-  font-size: 0.5em;
+  font-size: 0.75em;
 }
 // Section Headings
 .secTitle, .sec2Title{

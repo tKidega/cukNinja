@@ -42,7 +42,7 @@
         <li>
           <p class='sys3Text' title='use the sub-system name in the URL'>
             Several sub-system's are accessible via this link. Use the
-            drop-down tab "Services" to access more sub-system modules
+            drop-down tab " &bull; &bull; &bull; " to access more sub-system modules
           </p>
         </li>
         <li>

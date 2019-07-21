@@ -11,10 +11,10 @@
 @endsection
 
 @section('navigator')
-<?php
-  //This section is Universal to the sub-system and loaded via the layout
-?>
-@include('scripts.siteNav.public.navbar_00D')
+  <?php
+    //This section is customizable based on sub-system requirements.
+  ?>
+  @include('scripts.structure.siteNav.public.navbar_00D')
 @endsection
 
 @section('faq_content')
