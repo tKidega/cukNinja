@@ -27,7 +27,7 @@
   <div style='clear:both'></div>
 
   <div id='sysLogin'>
-    <h3 class='main2Title'>VSLA user login</h3>
+    @include('scripts.content.finance.login.secHeader')
     @include('scripts.content.finance.login.frmVSLA')
   </div>
   <div style='clear:both'></div>

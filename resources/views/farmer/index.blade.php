@@ -27,7 +27,7 @@
     <div style='clear:both'></div>
 
     <div id='sysLogin'>
-      <h3 class='main2Title'>user login</h3>
+      @include('scripts.content.farmer.login.secHeader')
       @include('scripts.content.farmer.login.frmLogin')
     </div>
     <div style='clear:both'></div>
