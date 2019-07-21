@@ -28,7 +28,7 @@
 
   <div id='sysLogin'>
     @include('scripts.content.finance.login.secHeader')
-    @include('scripts.content.finance.login.frmVSLA')
+    @include('scripts.content.finance.login.frmLogin')
   </div>
   <div style='clear:both'></div>
 

@@ -27,7 +27,7 @@
 
   <div id='sysLogin'>
     @include('scripts.content.manager.login.secHeader')
-    @include('scripts.content.manager.login.mgrLogin')
+    @include('scripts.content.manager.login.frmLogin')
   </div>
   <div style='clear:both'></div>
 
