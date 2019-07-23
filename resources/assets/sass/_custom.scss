@@ -57,6 +57,49 @@ html, body, .container{
   border-radius: 0;
   min-width: 600px;
   background-color: default;
+}#navbar,#navbar ul{
+  margin: 1px 1px;
+  height: 45px;
+  border: none;
+}#navbar{
+  width: 50%;
+}#navbar ul{
+  width: 99.9%;
+  margin-left: -10px;
+}#navbar ul li{
+  margin: 1px 1.5px;
+  width: 75px;
+  height: 40px;
+  border: none;
+}#navbar ul li h2{
+  margin: -2.5px -3.5px;
+  font-size: 1.05em;
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: gray;
+}#navbar ul li h2:hover{
+  color: white;
+  transition: all 0.5s;
+}
+// Custom font settings for sub-systems
+#subSys,#sysBtn{
+  border: none;
+}#subSys{
+  margin: 9px 2.5px;
+  width: 45px;
+  height: 25px;
+}#sysBtn{
+  margin: 1px auto;
+  width: 99.5%;
+  height: 20.5px;
+}#sysBtn h3{
+  margin: -15px 5px;
+  color: gray;
+  font-size: 1.05em;
+}#sysBtn h3:hover{
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 // Defining custom settings for index(sub-system) drop down menu
 // The div container needed to position the dropdown menu
@@ -103,26 +146,6 @@ html, body, .container{
 // the dropdown content container when the user clicks on the button)
 .show{
   display: block;
-}
-// Custom font settings for sub-systems
-#subSys{
-  margin: -11px 2.5px;
-  width: 45px;
-  height: 25px;
-  border: none;
-}#sysBtn{
-  margin: 1.5px auto;
-  width: 99.9;
-  height: 20px;
-  border: none;
-}#sysBtn h3{
-  text-align: center;
-  color: gray;
-  font-size: 1.5em;
-}#sysBtn h3:hover{
-  color: white;
-  transition: all 0.5s;
-  cursor: pointer;
 }
 // Defining custom settings for page content Section
 // Applied same configuration structure to the system home page
@@ -196,9 +219,9 @@ html, body, .container{
 }
 // Defining default section header font-settings
 // Main Headings
-.mainTitle, .main2Title, .main3Title, .main4Title{
+.mainTitle, .main2Title, .main3Title, .main4Title, .main5Title{
   text-align: center;
-  color: gray;
+  color: rgba(65,65,65,0.95);
   text-transform: capitalize;
 }.mainTitle{
   font-size: 1.50em;
@@ -215,6 +238,7 @@ html, body, .container{
 .subTitle, .sub2Title, .sub3Title{
   text-align: center;
   color: rgba(65,65,65,0.95);
+  text-transform: capitalize;
 }.subTitle{
   font-size: 0.95em;
 }.sub2Title{

@@ -1,0 +1,18 @@
+* [33m63bfcf2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m On master - Updated/Fixed errors with nodejs (Re-installed node), this updated system core files (composer.jason, composer.lock, package-lock.jason, package.jason). The system structure (source code is looking clean n good)....
+* [33mf6a4eae[m On master - Updated 'scripts' folder structure (added structure folder), updated custom nav per view in manager sub-system, updated @include link for all views, updated the home page services link to ( ... )
+* [33m1588b30[m On master - Updated name of the login form for finance(VSLA) and manager sub-systems.
+* [33me1c75e4[m On master - Updated (login view) section header for finance(VSLA), farmer and manager sub-systems, updated management slogan.
+* [33mb936815[m On master - Updated section header to class main2Title for all sub-systems, striped down t&c page, added sys3Text CSS settings, updated home page user guide content, updated header_01,_02 && _04 slogan, went total OCD on all the views - CODE STANDADIZATION achieved!!!
+* [33m0bacb20[m On master - added controllers to manage system routes, added provider(uncomment after update of forms) in app.php, added Form and Html aliases in the same file, brokedown sub-sytems into managable units (implimented scripts throught the subsytem's), added scripts for page content (created new folder named content), updated default system routes (all routes are working but not optimised yet to system requirements)- cleaned out source code to conform to KISS, DRY and SOLID programming principles. Solidified the final phase of the system structure
+* [33m74e357f[m On master - Added custom css (style_A), added classifieds (adverts) view plus its dependancies (layout,index, routes), added the pubic bulletin board, updated system slogan (..know), defined default page structure CSS settings, defined page #wrapper  - Avoid restore beyond this point.
+* [33m7156490[m On master - Added custom sys navigator for the sub-systems (grouped links according to sub-system/folders). Links are not up-to-date but are working...
+* [33mb1f84ee[m On master - Edited public links (About,FAQ,Legal). Added some new siteNav scripts (E,F).
+* [33meca7ea6[m On master - Updated system views, grouped def scripts (views folder), added graphix (public folder),fine-tuned header and footer settings,added custom JS (sub-system) -- This commit defines the system as is, advised to resist restoring below this point.
+* [33mcd5e67a[m On master - Updated default config settings for the site header, added faq, legal and tc views, defined sub-system nav bar settings, updated tc link in footer_00, deleted scripts folder in resources/assets and updated the system routes.
+* [33mf6e98cf[m On Master - Updated mainTitle to 0.85
+* [33m531f004[m On Master - Fixed public layout and custom css configurations
+* [33m7ba9c37[m On Master - Installed npm, updated layouts, created custom css, created layout scripts, updated default routes and updated webpack.mix.js. Also updated atom API plugins and themes.
+* [33m284baef[m On master - fixed public layout
+* [33md6f0865[m Default (Final) commit on master - Defined custom layouts, views and top level routes.
+* [33me477ee1[m Default commit - Added closing div 'style' to the page-wrapper 'Container' class.
+* [33m010e19b[m Default commit - Defined sub-systems and all system bare-bones structure.

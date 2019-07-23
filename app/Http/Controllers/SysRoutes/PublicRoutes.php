@@ -10,7 +10,7 @@ class PublicRoutes extends Controller{
     return view('/genHappiness/index');
   }
 
-  public function search(){
+  public function search(){z
     return view('/genHappiness/search');
   }
 

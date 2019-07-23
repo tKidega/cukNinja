@@ -29,7 +29,7 @@
   <div style='clear:both'></div>
 
   <div id='sysLogin'>
-    @include('scripts.content.genHappiness.home.secHeader')
+    @include('scripts.structure.animation.sec2Header')
     @include('scripts.content.genHappiness.home.userGuide')
   </div>
   <div style='clear:both'></div>

@@ -14,12 +14,12 @@
     <dd>
       <ul>
         <li>
-          <p class='sys3Text' title='This has a black background'>
-            Use this to navigate the system (found at the top)</p>
+          <p class='sys3Text' title='Concaneting /home or simply / to the URL will get you back to the home page'>
+            Use this to navigate the system</p>
         </li>
         <li>
-          <p class='sys3Text' title='click on "Search" to query the system database about various products'>
-            Click on the available tab name to access the page content</p>
+          <p class='sys3Text' title='sub-systems are: /vsla,/farmer,/adverts and /manager'>
+            Alternatively, use (add) the page/sub-system alias in the URL</p>
         </li>
       </ul>
     </dd>
