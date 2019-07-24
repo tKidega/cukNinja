@@ -1,6 +1,6 @@
 <?php
 // Defining custom header settings for the public section
-$motto = 'Get clicking! Know more';
+$motto = 'Get clicking and do more';
 ?>
 <div class='container' id='site_header'>
 
