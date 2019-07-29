@@ -1,19 +1,11 @@
 <?php
   define('TITLE','cukNinja VSLA sub-system');
-  define('DESC', 'Under_construction');
-  define('E_MAIL', 'timothykidega@gmail.com');
-  define('SYS_ONE', 'cukNinja');
-  define('PHONE', '+256-756-023-283');
+  include'def.blade.php';
 ?>
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <title><?php echo TITLE; ?></title>
-    <meta charset='UTF-8'>
-    <meta name='Description' content = <?php echo DESC; ?> >
-    <meta name='Developer'   content = <?php echo E_MAIL; ?> >
-    <meta name='Contact'   content = <?php echo PHONE; ?> >
-    <link rel='stylesheet' type='text/css' href='css/app.css' />
+    @include('scripts.structure.defaultOpt')
   </head>
   <body>
     <div class='container' id='wrapper'>
