@@ -17,7 +17,7 @@
 |
 */
 
-// Defining default routes for the public section sub-system
+// Defining default routes for the public section
 Route::get('/', 'PublicRoutes@home');
 Route::get('/home', 'PublicRoutes@home');
 Route::get('/search', 'PublicRoutes@search');
@@ -27,24 +27,24 @@ Route::get('/legal', 'PublicRoutes@legal');
 Route::get('/contact', 'PublicRoutes@contact');
 Route::get('/t&c', 'PublicRoutes@tnc');
 
-// Defining default routes for cukNinja Finance sub-system
+// Defining default routes for Finance sub-system
 Route::get('/vsla', 'FinanceRoutes@vslaLogin');
 Route::get('/vslaHome', 'FinanceRoutes@vslaHome');
 Route::get('/vslaUser', 'FinanceRoutes@vslaUser');
 Route::get('/vslaAdmin', 'FinanceRoutes@vslaAdmin');
 Route::get('/vslaSiteAdmin', 'FinanceRoutes@vslaSiteAdmin');
 
-// Defining default routes for cukNinja Farmer sub-system
+// Defining default routes for Farmer sub-system
 Route::get('/farmer', 'FarmerRoutes@farmerLogin');
 Route::get('/farmerHome', 'FarmerRoutes@farmerHome');
 Route::get('/farmerGuest', 'FarmerRoutes@farmerGuest');
 Route::get('/farmerAgent', 'FarmerRoutes@farmerAgent');
 Route::get('/farmerAdmin', 'FarmerRoutes@farmerAdmin');
 
-// Defining defaut routes for the system adverts sub-ssystem
+// Defining defaut routes for the adverts sub-ssystem
 Route::get('/adverts', 'ClassifiedsRoutes@adverts');
 
-// Defining default routes for cukNinja Manager sub-system
+// Defining default routes for Manager sub-system
 Route::get('/manager', 'ManagerRoutes@manager');
 Route::get('/managerHome', 'ManagerRoutes@managerHome');
 Route::get('/managerGuest', 'ManagerRoutes@managerGuest');
