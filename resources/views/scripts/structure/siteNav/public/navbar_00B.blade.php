@@ -17,17 +17,17 @@
       <ul class='nav navbar-nav'>
 
         <li class="{{Request::is('/') ? 'active' : ' ' }}">
-          <a href='/home'
+          <a href="{{route('pubHome')}}"
           title='Click to go to home page'><h2 class='main5Title'>
           home</h2></a></li>
 
         <li class="{{Request::is('faq') ? 'active' : ' ' }}">
-          <a href='/faq'
+          <a href="{{route('faq')}}"
           title='View FAQ'><h2 class='main5Title'>
           F.A.Q</h2></a></li>
 
         <li class="{{Request::is('legal') ? 'active' : ' ' }}">
-          <a href='/legal'
+          <a href="{{route('legal')}}"
           title='View legal'><h2 class='main5Title'>
           legal</h2></a></li>
 

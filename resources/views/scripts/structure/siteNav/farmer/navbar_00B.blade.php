@@ -13,25 +13,25 @@
     <div id='navbar' class='collapse navbar-collapse'>
 
       <ul class='nav navbar-nav'>
-        <li class="{{Request::is('search') ? 'active' : ' ' }}">
-          <a href='/home'
+        <li class="{{Request::is('pubHome') ? 'active' : ' ' }}">
+          <a href="{{route('pubHome')}}"
           title='Return to home page'><h2 class='main5Title'>
           home</h2></a></li>
 
-        <li class="{{Request::is('about') ? 'active' : ' ' }}">
-          <a href='/search'
+        <li class="{{Request::is('#') ? 'active' : ' ' }}">
+          <a href="{{route('#')}}"
+          title='Return to home page'><h2 class='main5Title'>
+          View</h2></a></li>
+
+        <li class="{{Request::is('#') ? 'active' : ' ' }}">
+          <a href="{{route('#')}}"
           title='Querry the database'><h2 class='main5Title'>
-          search</h2></a></li>
+          View</h2></a></li>
 
-        <li class="{{Request::is('contact') ? 'active' : ' ' }}">
-          <a href='/about'
+        <li class="{{Request::is('#') ? 'active' : ' ' }}">
+          <a href="{{route('#')}}"
           title='View "About Us"'><h2 class='main5Title'>
-          about</h2></a></li>
-
-        <li class="{{Request::is('contact') ? 'active' : ' ' }}">
-          <a href='/contact'
-          title='Contact us'><h2 class='main5Title'>
-          contact</h2></a></li>
+          View</h2></a></li>
       </ul>
 
     </div>

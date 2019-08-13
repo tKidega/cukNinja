@@ -14,19 +14,26 @@
   transition: all 0.75s;
 }#wklySummary,#monthlySummary{
   margin-right: 1.5px;
-  width: 45%;
+  width: 49.5%;
   height: 206.5px;
+  z-index: 1;
+}#wklySummary,#monthlySummary{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
 }#wklySummary{
   position: absolute;
+  background: url(/graphix/graph_A.jpg);
 }#monthlySummary{
   float: right;
+  background: url(/graphix/graph_B.jpg);
 }#yrlySummary{
   width: 99.9%;
   height: 217.5px;
 }.graph,.graphTitle{
   margin: 1px auto;
   width: 99.9%;
-  border: 1px solid white;
+  border: none;
 }.graph{
   height: 190px;
 }.graph img{

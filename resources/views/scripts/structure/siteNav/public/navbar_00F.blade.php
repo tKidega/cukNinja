@@ -14,7 +14,7 @@
 
       <ul class='nav navbar-nav'>
         <li class="{{Request::is('/') ? 'active' : ' ' }}">
-          <a href='/home'
+          <a href="{{route('pubHome')}}"
           title='Return to home page'><h2 class='main5Title'>
           home</h2></a></li>
       </ul>

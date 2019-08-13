@@ -8250,7 +8250,7 @@ body,
 #wrapper {
   margin: 1px auto;
   width: 95%;
-  height: 680px;
+  height: 675px;
   border: 1px solid white;
 }
 
@@ -8264,7 +8264,7 @@ body,
 }
 
 #pg_header {
-  height: 105px;
+  height: 100px;
 }
 
 #pg_navigator,
@@ -8272,8 +8272,13 @@ body,
   height: 52.5px;
 }
 
+#pg_navigator {
+  z-index: 2;
+}
+
 #def_content {
-  height: 442.5px;
+  height: 440px;
+  z-index: 1;
 }
 
 #site_header,
@@ -8317,7 +8322,7 @@ body,
 }
 
 #slogan {
-  margin: 1px auto;
+  margin: -1.5px auto;
   height: 20px;
   width: 47.5%;
 }
@@ -8331,7 +8336,7 @@ body,
 .navbar {
   border-radius: 0;
   min-width: 600px;
-  background-color: default;
+  background-color: black;
 }
 
 #navbar,
@@ -8376,7 +8381,7 @@ body,
 }
 
 #subSys {
-  margin: 9px 2.5px;
+  margin: 12.5px 2.5px;
   width: 45px;
   height: 25px;
 }
@@ -8384,11 +8389,12 @@ body,
 #sysBtn {
   margin: 1px auto;
   width: 99.5%;
-  height: 20.5px;
+  height: 20px;
 }
 
 #sysBtn h3 {
-  margin: -15px 5px;
+  margin-top: 2.5px;
+  text-align: center;
   color: gray;
   font-size: 1.05em;
 }
@@ -8399,24 +8405,56 @@ body,
   cursor: pointer;
 }
 
-.dropdown {
+#navbar ul li ul {
+  margin: 15px -20px;
+  display: none;
+}
+
+#navbar ul li ul:hover li {
+  display: block;
+  background-color: black;
+  width: 100px;
+  height: 35px;
+  list-style-type: none;
+  margin-top: -2.5px;
+}
+
+#navbar ul li ul:hover li h3 {
+  color: gray;
+  margin-top: 5px;
+}
+
+#navbar ul li ul li h3:hover {
+  color: white;
+  cursor: pointer;
+}
+
+#navbar ul li ul li a {
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+/*
+// Defining custom settings for index(sub-system) drop down menu
+// The div container needed to position the dropdown menu
+.dropdown{
   margin-top: 2px;
   position: relative;
   display: inline-block;
   background-color: default;
   border: none;
 }
-
-.dropbtn {
+// Drop-down button
+.dropbtn{
   margin-top: 2px;
   background-color: inherit;
   color: silver;
-  padding: 2px;
+//padding: 2px;
   border: none;
   height: 25px;
 }
-
-.dropdown-list {
+// The Drop-down content (Hidden by default)
+.dropdown-list{
   margin-top: 2px;
   width: 99.9%;
   overflow: auto;
@@ -8424,24 +8462,25 @@ body,
   position: absolute;
   background-color: silver;
   min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
 }
-
-.dropdown-list a {
+// Custom links for the links inside Drop-down
+.dropdown-list a{
   color: black;
   padding: 12px 12px;
   text-decoration: none;
   display: block;
 }
-
-.dropdown-list a:hover {
+// Change color of dropdown links on hover
+.dropdown-list a:hover{
   background-color: #ddd;
 }
-
-.show {
+// To show the dropdown menu on user click(use JS to add this class to
+// the dropdown content container when the user clicks on the button)
+.show{
   display: block;
-}
+}*/
 
 #def_login {
   margin: 1.5px auto;
@@ -8456,15 +8495,16 @@ body,
   width: 55%;
   min-width: 550px;
   height: 430px;
-  border: 1px solid white;
+  border: none;
   position: absolute;
+  z-index: 1;
 }
 
 #sysLogin {
   margin: 1px -10px;
   width: 40%;
   height: 430px;
-  border: 1px solid white;
+  border: none;
   float: right;
 }
 
@@ -8638,16 +8678,26 @@ body,
 #wklySummary,
 #monthlySummary {
   margin-right: 1.5px;
-  width: 45%;
+  width: 49.5%;
   height: 206.5px;
+  z-index: 1;
+}
+
+#wklySummary,
+#monthlySummary {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
 }
 
 #wklySummary {
   position: absolute;
+  background: url(/graphix/graph_A.jpg);
 }
 
 #monthlySummary {
   float: right;
+  background: url(/graphix/graph_B.jpg);
 }
 
 #yrlySummary {
@@ -8659,7 +8709,7 @@ body,
 .graphTitle {
   margin: 1px auto;
   width: 99.9%;
-  border: 1px solid white;
+  border: none;
 }
 
 .graph {
