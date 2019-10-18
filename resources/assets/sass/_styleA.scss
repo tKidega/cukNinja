@@ -17,16 +17,15 @@
   width: 49.5%;
   height: 206.5px;
   z-index: 1;
-}#wklySummary,#monthlySummary{
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   background-origin: border-box;
 }#wklySummary{
   position: absolute;
-  background: url(/graphix/graph_A.jpg);
+  background: url("/graphix/graph_A.jpg");
 }#monthlySummary{
   float: right;
-  background: url(/graphix/graph_B.jpg);
+  background: url("/graphix/graph_B.jpg");
 }#yrlySummary{
   width: 99.9%;
   height: 217.5px;

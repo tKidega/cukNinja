@@ -1,11 +1,11 @@
 //Defining site defaults
-html, body, .container{
+html,body,.container{
   background-color: white;
 }#wrapper{
   margin: 1px auto;
-  width: 95%;
+  width: 95.9%;
   height: 675px;
-  border: 1px solid white;;
+  border: 1px solid white;
 }// Defining system default logical structure
 #pg_header,#pg_navigator,#def_content,#pg_footer{
   margin: 1.5px auto;
@@ -50,7 +50,10 @@ html, body, .container{
   margin: -1.5px auto;
   height: 20px;
   width: 47.5%;
-}.siteSlogan{
+}
+
+//noinspection ALL
+.siteSlogan{
   margin: 1.5px auto;
   font-weight: 1.15em;
   color: inherit;
