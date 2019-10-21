@@ -41,7 +41,7 @@ Route::get('/farmerGuest', 'FarmerRoutes@farmerGuest')->name('famrGuest');
 Route::get('/farmerAgent', 'FarmerRoutes@farmerAgent')->name('famrAgent');
 Route::get('/farmerAdmin', 'FarmerRoutes@farmerAdmin')->name('famrAdmin');
 
-// Defining defaut routes for the adverts sub-ssystem
+// Defining defaut routes for the adverts sub-system
 Route::get('/adverts', 'ClassifiedsRoutes@adverts')->name('adverts');
 
 // Defining default routes for Manager sub-system
